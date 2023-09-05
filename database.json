@@ -1,0 +1,1060 @@
+{
+    "templates": 
+    [{
+        "id":1,
+        "title":"Database Documentation",
+        "overview":"This database serves as the backbone of a fertility-related platform, facilitating donor data management and user interactions. It comprises various tables for storing donor profiles, user information, activity logs, and more.",
+        "keypoints":[
+            "Donor Profiles: Capture and store detailed donor profiles, including personal information, physical attributes, and education.",
+            "Unique IDs: Assign unique case IDs to donors for easy identification and privacy.",
+            "User Activity Logging: Record and track user activities, including registration, login, and password reset, while capturing relevant user data, IP addresses, and browser information.",
+            "Cohort Creation: Create 10 cohorts (replicas) for each donor, each with cohort-specific data, status, and pricing information.",
+            "Cohort Availability: Manage the availability and status of donor cohorts.",
+            "User Management: Store user profiles, including contact details, addresses, and login credentials. Assign roles (e.g., admin, clinic) and manage user permissions.",
+            "Favorite Donor Cohorts: Allow users to create and manage lists of favorite donor cohorts, associating them with user IDs for personalization.",
+            "Query Submission Handling: Enable users to submit queries or requests, track submission times, and manage query resolution and status.",
+            "Deleted User Records: Maintain records of deleted users, including contact details and reasons for deletion.",
+            "API User Management: Manage API users for external integration, including API keys, secrets, access permissions, and settings.",
+            "Metadata Storage: Store metadata related to users, roles, and settings, offering various configuration options.",
+            "API Logging: Log API actions, including in/out flows, associated data, success or error responses, IP addresses, and browser details.",
+            "Cohort View Count: Track the number of views for each donor cohort.",
+            "User Profile Requests: Handle user profile requests, granting special access permissions based on user requests and assignments.",
+            "Role-to-Role Relations: Establish relations between different user roles for streamlined permissions and access management.",
+            "Role Definition: Define user roles and their associated capabilities, including role status (active/inactive).",
+            "User Metadata: Store additional user metadata for enhanced user profiling.",
+            "User Settings: Manage user-specific settings and configurations."
+        ],
+        "img":"",
+        "vedio":"",
+        "chapters":[
+            {
+                "id1":1,
+                "title1":"donors TABLE",
+                "des1":"This is the main table where data is coming from a server and storing it into this table. The all data stored into this table in a table format in sql(Structured Query Language) and it store like this format -",
+                "tables":[
+                    { 
+                        "id2":1,
+                        "title2": "id (primary key, ai)",
+                        "type2": "int(11)",
+                        "des2": "This is the primary key of this table and also Auto incremented"
+                    },
+                    {
+                        "id2":2,
+                        "title2": "case_id",
+                        "type2": "varchar(100)",
+                        "des2": "This case_id is unique and giving it to every donors by code (unique_id format : ED0920222485000015XX)"
+                    },
+                    {
+                        "id2":3,
+                        "title2": "name",
+                        "type2": "varchar(200)",
+                        "des2": "Here we are storing the name"
+                    },
+                    {
+                        "id2":4,
+                        "title2": "alias",
+                        "type2": "varchar(200)",
+                        "des2": "Here we are adding some random number with the name for privacy policy"
+                    },
+                    {
+                        "id2":5,
+                        "title2": "age",
+                        "type2": "varchar(50)",
+                        "des2": "Here we are storing the age of a donors"
+                    },
+                    {
+                        "id2":6,
+                        "title2": "weight",
+                        "type2": "varchar(50)",
+                        "des2": "age of the donor"
+                    },
+                    {
+                        "id2":7,
+                        "title2": "hight",
+                        "type2": "varchar(50)",
+                        "des2": "height of the donor"
+                    },
+                    {
+                        "id2":8,
+                        "title2": "hight_inch",
+                        "type2": "varchar(50)",
+                        "des2": "height in inches"
+                    },
+                    {
+                        "id2":9,
+                        "title2": "eye_color",
+                        "type2": "varchar(50)",
+                        "des2": "eye colour of the donors"
+                    },
+                    {
+                        "id2":10,
+                        "title2": "hair_color",
+                        "type2": "varchar(50)",
+                        "des2": "hair colour of the donor"
+                    },
+                    {
+                        "id2":11,
+                        "title2": "blood_type",
+                        "type2": "varchar(10)",
+                        "des2": "blood type"
+                    },
+                    {
+                        "id2":12,
+                        "title2": "education",
+                        "type2": "varchar(200)",
+                        "des2": "education details"
+                    },
+                    {
+                        "id2":13,
+                        "title2": "course",
+                        "type2": "varchar(200)",
+                        "des2": "donors any kind of education if they have"
+                    },
+                    {
+                        "id2":14,
+                        "title2": "school_major",
+                        "type2": "varchar(200)",
+                        "des2": "schooling details"
+                    },
+                    {
+                        "id2":15,
+                        "title2": "racial_background",
+                        "type2": "varchar(200)",
+                        "des2": "location of the donors"
+                    },
+                    {
+                        "id2":16,
+                        "title2": "racial_description",
+                        "type2": "varchar(200)",
+                        "des2": "donors racial_description"
+                    },
+                    {
+                        "id2":17,
+                        "title2": "has_biological_children",
+                        "type2": "varchar(50)",
+                        "des2": "if donors have any children or not"
+                    },
+                    {
+                        "id2":18,
+                        "title2": "ethnic_origin",
+                        "type2": "varchar(200)",
+                        "des2": "ethnic origin of the donors"
+                    },
+                    {
+                        "id2":19,
+                        "title2": "cohort_data",
+                        "type2": "text ",
+                        "des2": " this the cohorts data of pricing ,status are saved in text in json format and sent by the api and stored into the cohorts_data column in json format.( Sample format : {\"cprice\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],\"cpremium\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],\"cstatus\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],\"eggs\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"],\"display\":[\"FALSE\",\"FALSE\",\"FALSE\",\"FALSE\",\"FALSE\",\"FALSE\",\"FALSE\",\"FALSE\"]})"
+                    },
+                    {
+                        "id2":20,
+                        "title2": "cohort_image",
+                        "type2": "text",
+                        "des2": "this the multiple  images of the particular donors which is stored into this cohort_image in json format .(Sample Format :{\"cohort1_img\":\"1\",\"cohort2_img\":\"2\",\"cohort3_img\":\"3\",\"cohort4_img\":\"4\",\"cohort5_img\":\"5\",\"cohort6_img\":\"6\",\"cohort7_img\":\"\",\"cohort8_img\":\"\",\"cohort9_img\":\"\",\"cohort10_img\":\"\"})"
+                    },
+                    {
+                        "id2":21,
+                        "title2": "face_match",
+                        "type2": "varchar(100)",
+                        "des2": "here we are store the id from donor_cohorts table"
+                    },
+                    {
+                        "id2":22,
+                        "title2": "archive",
+                        "type2": "varchar(10)",
+                        "des2": "It's the boolean value (true/false)"
+                    },
+                    {
+                        "id2":23,
+                        "title2": "cohort_update",
+                        "type2": "varchar(50)",
+                        "des2": " this the record of time when the cohort_data will be updated"
+                    },
+                    {
+                        "id2":24,
+                        "title2": "last_update",
+                        "type2": "varchar(100)",
+                        "des2": "this is updated timestamp for data"
+                    },
+                    {
+                        "id2":25,
+                        "title2": "insert_time",
+                        "type2": "varchar(50)",
+                        "des2": "timestamp for the creation of table"
+                    }
+                ],
+                "summary":"This main donors table is for adding and storing data from the External api and after setting the data we are populating it into the “donor_cohorts”  table where we are creating 10 replicas for one donor for using it in multiple ways ."
+            },
+
+            {
+                
+                "id1":2,
+                "title1":"donor_cohorts TABLE",
+                "des1":"In this table we are creating 10 replicas of each donors with cohorts data and And storing the data over here and manipulating and also adding the unique case_id. The following table columns are -",
+                "tables":[
+                    {
+                        "id2":1,
+                        "title2": "id (primary key, ai)",
+                        "type2": "int(11)",
+                        "des2": "This is the unique id for all the cohorts"
+                    },
+                    {
+                        "id2":2,
+                        "title2": "case_id",
+                        "type2": "varchar(50)",
+                        "des2": "This is the case id which which we provided into the main table"
+                    },
+                    {
+                        "id2":3,
+                        "title2": "cohort_status",
+                        "type2": "varchar(50)",
+                        "des2": "this data is coming from cohorts_data in the donors table and status i like if the status is pending or reserved or booked or frozen"
+                    },
+                    {
+                        "id2":4,
+                        "title2": "no_of_egg",
+                        "type2": "varchar(50)",
+                        "des2": "This is the number of eggs for each cohort. This data also comes from the cohorts_data ."
+                    },
+                    {
+                        "id2":5,
+                        "title2": "status",
+                        "type2": "varchar(50)",
+                        "des2": "This status is boolean value if the cohorts available or not this the status based on availability of cohorts"
+                    },
+                    {
+                        "id2":6,
+                        "title2": "display_id",
+                        "type2": "varchar(50)",
+                        "des2": "A  unique id for each cohorts (Display_C1)"
+                    },
+                    {
+                        "id2":7,
+                        "title2": "price",
+                        "type2": "varchar(20)",
+                        "des2": "price  of each cohorts"
+                    }
+                ],
+                "summary":"The main perspective of this table is to create 10 replicas for use in different sections ."
+            },
+
+            {
+                            
+                "id1":3,
+                "title1":"favorite_donors TABLE",
+                "des1":"This table is created for creating the favourite cohort with the user_id  and saving the fav list with the particular user ",
+                "tables":[
+                    {
+                        "id2":1,
+                        "title2": "id (primary key, ai)",
+                        "type2": "int(10)",
+                        "des2": "This the unique id for all fav items"
+                    },
+                    {
+                        "id2":2,
+                        "title2": "id_user",
+                        "type2": "int(10)",
+                        "des2": "This the id of the user who is creating the favourite list for ownself of user"
+                    },
+                    {
+                        "id2":3,
+                        "title2": "id_cohort",
+                        "type2": "int(10)",
+                        "des2": "This is unique id of the cohort by this it is selecting the particular cohorts and save into this table for favlist of a particular user"
+                    },
+                    {
+                        "id2":4,
+                        "title2": "insert_time",
+                        "type2": "varchar(50)",
+                        "des2": "This the timestamp for creating the favlist"
+                    }
+                    
+
+                ],
+                "summary":"The main perspective of this table is to create a favlist of a particular user"
+            },
+
+            {
+                "id1":4,
+                "title1":"from_submision TABLE",
+                "des1":"This table is used to get the customer query and save it in the table.",
+                "tables":[
+                    {
+                        "id2":1,
+                        "title2": "id (primary key, ai)",
+                        "type2": "int(11)",
+                        "des2": "this is primary key"
+                    },
+                    {
+                        "id2":2,
+                        "title2": "form",
+                        "type2": "varchar(100) ",
+                        "des2": "this is the only a field which value is contact"
+                    },
+                    {
+                        "id2":3,
+                        "title2": "id_user",
+                        "type2": "int(10)",
+                        "des2": "this the unique user id getting from the users table"
+                    },
+                    {
+                        "id2":4,
+                        "title2": "data",
+                        "type2": "text",
+                        "des2": " here we are saving the users data like json format and the format is {\"msg\":\"purchasing a donor egg\",\"preffered_date\":\"none\",\"preffered_time\":\"none\"}"
+                    },
+                    {
+                        "id2":5,
+                        "title2": "seen",
+                        "type2": "char(1)",
+                        "des2": "seen by the admin or any views will count in this"
+                    },
+                    {
+                        "id2":6,
+                        "title2": "resolved",
+                        "type2": "char(1)",
+                        "des2": "this the section where we marking that if that query is resolved or not"
+                    },
+                    {
+                        "id2":7,
+                        "title2": "Insert_time",
+                        "type2": "varchar(50)",
+                        "des2": "time stamp"
+                    }
+
+                ],
+                "summary":"The main perspective of this table is to create users query and there stats"
+            },
+
+            {
+                "id1":5,
+                "title1":"users TABLE",
+                "des1":"",
+                "tables":[
+                    {
+                        "id2":1,
+                        "title2": "id (primary key, ai)",
+                        "type2": "int(10)",
+                        "des2": "This the primary key of the table which is used to identify the particular users"
+                    },
+                    {
+                        "id2":2,
+                        "title2": "name",
+                        "type2": "varchar(250)",
+                        "des2": "Users  name"
+                    },
+                    {
+                        "id2":3,
+                        "title2": "phone",
+                        "type2": "varchar(20)",
+                        "des2": "Users phone number"
+                    },
+                    {
+                        "id2":4,
+                        "title2": "username",
+                        "type2": "varchar(100)",
+                        "des2": "To store the username in different format adding with some number"
+                    },
+                    {
+                        "id2":5,
+                        "title2": "email",
+                        "type2": "varchar(250)",
+                        "des2": "Here we are storing the users email address"
+                    },
+                    {
+                        "id2":6,
+                        "title2": "password",
+                        "type2": "varchar(100)",
+                        "des2": "To store the user password"
+                    },
+                    {
+                        "id2":7,
+                        "title2": "profile_image",
+                        "type2": "varchar(100)",
+                        "des2": "Profile image of the particular"
+                    },
+                    {
+                        "id2":8,
+                        "title2": "tc",
+                        "type2": "varchar(1)",
+                        "des2": "Test case"
+                    },
+                    {
+                        "id2":9,
+                        "title2": "country",
+                        "type2": "varchar(100)",
+                        "des2": "To store the country"
+                    },
+                    {
+                        "id2":10,
+                        "title2": "state",
+                        "type2": "varchar(100)",
+                        "des2": "To store the users state"
+                    },
+                    {
+                        "id2":11,
+                        "title2": "city",
+                        "type2": "varchar(100)",
+                        "des2": "Users city"
+                    },
+                    {
+                        "id2":12,
+                        "title2": "street1",
+                        "type2": "varchar(150)",
+                        "des2": "Users street address"
+                    },
+                    {
+                        "id2":13,
+                        "title2": "street2",
+                        "type2": "varchar(150)",
+                        "des2": "Users street address"
+                    },
+                    {
+                        "id2":14,
+                        "title2": "zip",
+                        "type2": "varchar(20)",
+                        "des2": "Users zip"
+                    },
+                    {
+                        "id2":15,
+                        "title2": "code",
+                        "type2": "varchar(100)",
+                        "des2": "Users unique Code"
+                    },
+                    {
+                        "id2":16,
+                        "title2": "contact_time",
+                        "type2": "varchar(20)",
+                        "des2": "The time of contact with the intendant parents"
+                    },
+                    {
+                        "id2":17,
+                        "title2": "insert_time",
+                        "type2": "varchar(50)",
+                        "des2": "Users first-time login time "
+                    },
+                    {
+                        "id2":18,
+                        "title2": "last_login",
+                        "type2": "varchar(50)",
+                        "des2": "Users last login time "
+                    },
+                    {
+                        "id2":19,
+                        "title2": "logged_in",
+                        "type2": "char(1)",
+                        "des2": "Users logged in time"
+                    },
+                    {
+                        "id2":20,
+                        "title2": "status",
+                        "type2": "enum('pending','active','deactivated','suspended')",
+                        "des2": "This is the enum that mean users status if the user is on pending , active or deactivated from the server or the user side. At the first side the user  have to be in pending and will wait for admin side permission"
+                    },
+                    {
+                        "id2":21,
+                        "title2": "added_by",
+                        "type2": "varchar(50)",
+                        "des2": "From whom the user get permission"
+                    },
+                    {
+                        "id2":22,
+                        "title2": "type",
+                        "type2": "enum('root','ip','clinic','admin')",
+                        "des2": "It is also an enum value where we are defining the role of the user if the user is a ip , root, clinic, admin . based on this role we are giving the users a special permission from the admin side."
+                    }
+            
+                ],
+                "summary":"The main perspective of this table is to store the users data in an efficient way to so that we can retrive the data from this table ."
+            },
+
+            {
+                            
+                "id1":6,
+                "title1":"user_activity_log  TABLE",
+                "des1":"This table is used to store the users activity like this format -",
+                "tables":[
+                    {
+                        "id2":1,
+                        "title2": "id (primary key, ai)",
+                        "type2": " int(10)",
+                        "des2": "This is the unique and primary key which is defined for the unique identity of each activity of all users like root, ip, admin etc ."
+                    },
+                    {
+                        "id2":2,
+                        "title2": "id_user (INDEXED)",
+                        "type2": "varchar(10)",
+                        "des2": "This is the users unique identity from the users table to create a relation between this two table"
+                    },
+                    {
+                        "id2":3,
+                        "title2": "user_type",
+                        "type2": "varchar(20)",
+                        "des2": "This is the type of users whether a user is a ip or anything else"
+                    },
+                    {
+                        "id2":4,
+                        "title2": "user_info",
+                        "type2": "text",
+                        "des2": "Here we are storeing the user's information"
+                    },
+                    {
+                        "id2":5,
+                        "title2": "event",
+                        "type2": "varchar(250)",
+                        "des2": "Is is the column where we are getting the info about users activity like register , login , reset password etc ."
+                    },
+                    {
+                        "id2":6,
+                        "title2": "data",
+                        "type2": "text",
+                        "des2": "Here is the place where we are storing the users data as json format (Sample format : {\"name\":\"suneha\",\"phone\":\"9187677889\",\"username\":null,\"email\":\"suneha@gmail.com\",\"tc\":1})"
+                    },
+                    {
+                        "id2":7,
+                        "title2": "result",
+                        "type2": "enum('success' ,'error')",
+                        "des2": "In this key we are using enum so that we can handle successfully the user's activity or there is some error."
+                    },
+                    {
+                        "id2":8,
+                        "title2": "msg",
+                        "type2": "text",
+                        "des2": "Here we are handling the error or successful response msg for the admin side"
+                    },
+                    {
+                        "id2":9,
+                        "title2": "ip",
+                        "type2": "varchar(50)",
+                        "des2": "Here we are store the ip address of the users device "
+                    },
+                    {
+                        "id2":10,
+                        "title2": "browser",
+                        "type2": "varchar(100)",
+                        "des2": "Here we are storing the browser of where the user is actively working on the site ."
+                    },
+                    {
+                        "id2":11,
+                        "title2": "insert_time",
+                        "type2": "varchar(50)",
+                        "des2": "This is the default timestamp."
+                    }
+
+                ],
+                "summary":"This table is mainly used for getting a track of the users who are working on the site and major activities ."
+            },
+
+            {
+                            
+                "id1":7,
+                "title1":"user_ip_relations  TABLE",
+                "des1":"This table is used to create a relation between different role -",
+                "tables":[
+                    {
+                        "id2":1,
+                        "title2": "id (primary key, ai)",
+                        "type2": "int(10)",
+                        "des2": "This the primary key of of the table"
+                    },
+                    {
+                        "id2":2,
+                        "title2": "id_ip (INDEXED)",
+                        "type2": "varchar(10)",
+                        "des2": "|Here the id_ip is coming from the users_activity_log and through  this we are giving access to different roles and also indexed it for further manipulation of data."
+                    },
+                    {
+                        "id2":3,
+                        "title2": "id_user (INDEXED) ",
+                        "type2": "varchar(10)",
+                        "des2": "Here we are indexed the users id"
+                    },
+                    {
+                        "id2":4,
+                        "title2": "assigned_by (INDEXED)",
+                        "type2": "varchar(10)",
+                        "des2": "Here who is assigned the connection between different roles."
+                    },
+                    {
+                        "id2":5,
+                        "title2": "insert_time",
+                        "type2": "varchar(50)",
+                        "des2": "Default timestamp"
+                    }
+
+                ],
+                "summary":"This table is mainly used to get records of  where and who is assigned whom ."
+            },
+
+            {
+                            
+                "id1":8,
+                "title1":"user_otp TABLE",
+                "des1":"This table is used to create a otp for the user if the user is forget the password -",
+                "tables":[
+                    {
+                        "id2":1,
+                        "title2": "id_user (primary key, ai)",
+                        "type2": "int(10)",
+                        "des2": "This the primary key of of the table"
+                    },
+                    {
+                        "id2":2,
+                        "title2": "password",
+                        "type2": "varchar(250)",
+                        "des2": "Here we are give them a password to login into the website if the user is forget the password or if going any thing wrong the password"
+                    },
+                    {
+                        "id2":3,
+                        "title2": "email",
+                        "type2": "varchar(250)",
+                        "des2": "Here we are storing the value of the email address of the users where we are sending the mail."
+                    },
+                    {
+                        "id2":4,
+                        "title2": "username",
+                        "type2": "varchar(250)",
+                        "des2": "Here we are storing the username"
+                    },
+                    {
+                        "id2":5,
+                        "title2": "phone",
+                        "type2": "varchar(250)",
+                        "des2": "Here we are storing the phone number of the user"
+                    }
+                ],
+                "summary":"This table is used to store handle if a user is forget to the password of his ac created in the website"
+            },
+
+            {
+                            
+              
+                "id1":9,
+                "title1":"User_profile_request_relation TABLE",
+                "des1":"This table is used to handle the profile request and give the users a special access permission-",
+                "tables":[
+                    {
+                        "id2":1,
+                        "title2": " id (primary key, ai)",
+                        "type2": "int(10)",
+                        "des2": "This the primary key of of the table"
+                    },
+                    {
+                        "id2":2,
+                        "title2": "id_request (INDEXED)",
+                        "type2": "varchar(10)",
+                        "des2": "Here we are indexed the users id"
+                    },
+                    {
+                        "id2":3,
+                        "title2": "id_user (INDEXED)",
+                        "type2": "varchar(11)",
+                        "des2": "Here we are indexed the users id"
+                    },
+                    {
+                        "id2":4,
+                        "title2": "assigned_by (INDEXED)",
+                        "type2": "varchar(10)",
+                        "des2": "Here we are indexed the assined_by"
+                    },
+                    {
+                        "id2":5,
+                        "title2": "insert_time",
+                        "type2": "varchar(50)",
+                        "des2": "Default timestamp"
+                    }
+                ],
+                "summary":"This table is used to handle the users permission ."
+            },
+
+            {
+                            
+                    "id1":10,
+                    "title1":"user_role_relations TABLE",
+                    "des1":"This table is used to handle the role to role relation -",
+                    "tables":[
+                        {
+                            "id2":1,
+                            "title2": "id (primary key, ai)",
+                            "type2": "int(10)",
+                            "des2": "This the primary key of of the table"
+                        },
+                        {
+                            "id2":2,
+                            "title2": "id_user (INDEXED)",
+                            "type2": "int(10)",
+                            "des2": "Here we are indexed the users id"
+                        },
+                        {
+                            "id2":3,
+                            "title2": "id_role (INDEXED)",
+                            "type2": "int(10)",
+                            "des2": " Here we are indexed the users_role table id"
+                        }
+
+                    ],
+                    "summary":"This table is used to define the role to role connection ."
+            },
+
+            {
+                "id1":11,
+                "title1":"User_role TABLE",
+                "des1":"This table is used give the role a special permission-",
+                "tables":[
+                    {
+                        "id2":1,
+                        "title2": "id (primary key, ai)",
+                        "type2": "int(10)",
+                        "des2": "This the primary key of of the table"
+                    },
+                    {
+                        "id2":2,
+                        "title2": "label",
+                        "type2": "varchar(250)",
+                        "des2": "Label for the user role"
+                    },
+                    {
+                        "id2":3,
+                        "title2": "capabilities",
+                        "type2": "text",
+                        "des2": "Here we are give the role the special permission like this key value pair (Sample Format : {\"manage_ips_limited\":true,\"add_ip\":true,\"view_ip\":true,\"download_public_profile\":true,\"manage_full_profile_requests_limited\":true,\"change_full_profile_request_status\":true,\"assign_full_profile_request_to_users\":true,\"export_full_profile_requests\":true})"
+                    },
+                    {
+                        "id2":4,
+                        "title2": "settings",
+                        "type2": "text",
+                        "des2": "Here we are  give the role the special permission like this key value pair (Sample Format : {\"group_name\":\"Sales Group Lead\",\"group_alert\":true,\"group_email\":\"jnikolic@fertile.com\"})"
+                    },
+                    {
+                        "id2":5,
+                        "title2": "status",
+                        "type2": "enum('active','inactive')",
+                        "des2": "Here we are given the roles a particular status is the user is active or inactive."
+                    }
+                ],
+                "summary":"This table is used to define the roles permission."
+            },
+
+            {
+                        "id1":12,
+                        "title1":"User_meta TABLE",
+                        "des1":"This table is used to store the users meta data -",
+                        "tables":[
+                            {
+                                "id2":1,
+                                "title2": "id (primary key, ai)",
+                                "type2": "int(10)",
+                                "des2": "This the primary key of of the table"
+                            },
+                            {
+                                "id2":2,
+                                "title2": "id_user (INDEXED)",
+                                "type2": "varchar(10)",
+                                "des2": "Here we are indexed the users id"
+                            },
+                            {
+                                "id2":3,
+                                "title2": "meta_key",
+                                "type2": "varchar(100)",
+                                "des2": "Here we are storing the meta value of the user"
+                            },
+                            {
+                                "id2":4,
+                                "title2": "meta_value",
+                                "type2": "text",
+                                "des2": "Here we are storing the meta value of the user"
+                            }
+                        ],
+                        "summary":"This table is used to define the metadata of a user."
+            },
+
+            {
+                            
+                        "id1":13,
+                        "title1":"User_settings TABLE",
+                        "des1":"This table is used to store the users meta data -",
+                        "tables":[
+                            {
+                                "id2":1,
+                                "title2": "id (primary key, ai)",
+                                "type2": "int(10)",
+                                "des2": "This the primary key of of the table"
+                            },
+                            {
+                                "id2":2,
+                                "title2": "id_user (INDEXED)",
+                                "type2": "int(10)",
+                                "des2": "Here we are connecting the users by the id retrieve from users table"
+                            },
+                            {
+                                "id2":3,
+                                "title2": "name",
+                                "type2": "varchar(250)",
+                                "des2": "Here we are storing the name"
+                            },
+                            {
+                                "id2":4,
+                                "title2": "value",
+                                "type2": "text",
+                                "des2": "Value of the users"
+                            }
+                        ],
+                        "summary":"This table is used to define the metadata of a user."
+            },
+            
+            {
+                            
+                        "id1":14,
+                        "title1":"Deleted_users TABLE",
+                        "des1":"This table is used to store deleted users details-",
+                        "tables":[
+                            {
+                                "id2":1,
+                                "title2": "id (primary key, ai)",
+                                "type2": "int(10)",
+                                "des2": "This the primary key of of the table"
+                            },
+                            {
+                                "id2":2,
+                                "title2": "id_user (INDEXED)",
+                                "type2": "int(10)",
+                                "des2": "Here we are connecting the users by the id retrieve from users table "
+                            },
+                            {
+                                "id2":3,
+                                "title2": "name",
+                                "type2": "varchar(250)",
+                                "des2": "Here we are storing the name"
+                            },
+                            {
+                                "id2":4,
+                                "title2": "phone",
+                                "type2": "varchar(20)",
+                                "des2": "Here we are storing the phone no."
+                            },
+                            {
+                                "id2":5,
+                                "title2": "email",
+                                "type2": "varchar(250)",
+                                "des2": "Here we are storing the email"
+                            },
+                            {
+                                "id2":6,
+                                "title2": "type",
+                                "type2": "varchar(100)",
+                                "des2": "Here we are storing the type"
+                            },
+                            {
+                                "id2":7,
+                                "title2": "insert_time ",
+                                "type2": "varchar(20)",
+                                "des2": "Default time"
+                            }
+                        ],
+                        "summary":"This table is store the deleted data to store"
+            },
+
+            {
+                            
+                        "id1":15,
+                        "title1":"Api_users TABLE",
+                        "des1":"This table is used to store the users meta data -",
+                        "tables":[
+                            {
+                                "id2":1,
+                                "title2": "id (primary key, ai)",
+                                "type2": "int(10)",
+                                "des2": "This the primary key of of the table"
+                            },
+                            {
+                                "id2":2,
+                                "title2": "name",
+                                "type2": "varchar(200)",
+                                "des2": "Here we are storing the name"
+                            },
+                            {
+                                "id2":3,
+                                "title2": "email",
+                                "type2": "varchar(200)",
+                                "des2": "Here we are storing the email"
+                            },
+                            {
+                                "id2":4,
+                                "title2": "company",
+                                "type2": "varchar(200)",
+                                "des2": "Here we are storing the company name"
+                            },
+                            {
+                                "id2":5,
+                                "title2": "url",
+                                "type2": "varchar(200)",
+                                "des2": "Here we are storing the url"
+                            },
+                            {
+                                "id2":6,
+                                "title2": "api_key",
+                                "type2": "varchar(250)",
+                                "des2": "Here we are storing the api  key"
+                            },
+                            {
+                                "id2":7,
+                                "title2": "api_secret",
+                                "type2": "varchar(250)",
+                                "des2": "Here we are storing the api secret"
+                            },
+                            {
+                                "id2":8,
+                                "title2": "settings",
+                                "type2": "text",
+                                "des2": "Here we are storing the data like this format {\"get_all_donors\":{\"enable\":true},\"get_single_donor\":{\"enable\":true,\"caps\":{\"education\":true,\"ethnicity\":true,\"race\":true,\"age\":true,\"blood_type\":true,\"cohort_status\":true,\"eye_color\":true,\"hair_color\":true,\"height\":true,\"school_major\":true}},\"get_single_donor_full\":{\"enable\":true,\"caps\":{\"education\":true,\"ethnicity\":true,\"race\":true,\"age\":true,\"blood_type\":true,\"cohort_status\":true,\"eye_color\":true,\"hair_color\":true,\"height\":true,\"weight\":true,\"bmi\":true,\"school_major\":true,\"country\":true,\"price\":true,\"body_type\":true,\"vision\":true,\"hair_type\":true,\"orthodontic\":true,\"complexion\":true,\"baldness\":true,\"dominant_hand\":true}},\"get_all_ips\":{\"enable\":true},\"get_single_ip\":{\"enable\":true,\"caps\":{\"name\":true,\"phone\":true,\"email\":true,\"image\":true,\"reg_date\":true,\"total_pr\":true}}}"
+                            },
+                            {
+                                "id2":9,
+                                "title2": "insert_time",
+                                "type2": "varchar(50)",
+                                "des2": "Default time"
+                            },
+                            {
+                                "id2":10,
+                                "title2": "status",
+                                "type2": "enum('active' ,'inactive')",
+                                "des2": "Here we are storing the status if the user is active or inactive"
+                            }
+
+                        ],
+                        "summary":"This table is used to define the metadata of a user."
+            },
+
+            {
+                            
+    "id1":16,
+    "title1":"Options TABLE",
+    "des1":"This table is used to store the users meta data -",
+    "tables":[
+        {
+            "id2":1,
+            "title2": "id (primary key, ai)",
+            "type2": "int(10)",
+            "des2": "This the primary key of of the table"
+        },
+        {
+            "id2":2,
+            "title2": "name",
+            "type2": "varchar(150)",
+            "des2": "Here we are storing the name "
+        },
+        {
+            "id2":3,
+            "title2": "value",
+            "type2": "text",
+            "des2": "Here we are storeing the value"
+        }
+    ],
+    "summary":"This table is used to define the metadata of a user. "
+            },
+
+            {
+                            
+    "id1":17,
+    "title1":"Api_log TABLE",
+    "des1":"All API log will record here -",
+    "tables":[
+        {
+            "id2":1,
+            "title2": "id (primary key, ai)",
+            "type2": "int(10)",
+            "des2": "This the primary key of of the table"
+        },
+        {
+            "id2":2,
+            "title2": "id_api_user (INDEXED)",
+            "type2": "int(10)",
+            "des2": "This the foreign key  of api user"
+        },
+        {
+            "id2":3,
+            "title2": "api_action",
+            "type2": "varchar(250)",
+            "des2": "Here we are storing the the all action of api"
+        },
+        {
+            "id2":4,
+            "title2": "flow",
+            "type2": "varchar(200)",
+            "des2": "Here we are setting the value in or out"
+        },
+        {
+            "id2":5,
+            "title2": "data",
+            "type2": "varchar(200)",
+            "des2": " here we are storing the case_id and display _id of cohorts like this format {\"case_id\":\"ED03302375548000XGH8\",\"display_id\":\"1\"}"
+        },
+        {
+            "id2":6,
+            "title2": "result",
+            "type2": "varchar(250)",
+            "des2": "Here we are handling the success or error response from the server or admin site"
+        },
+        {
+            "id2":7,
+            "title2": "msg",
+            "type2": "varchar(250)",
+            "des2": "Send the message to the user of success or error handling"
+        },
+        {
+            "id2":8,
+            "title2": "ip",
+            "type2": "text",
+            "des2": "Here we are tracking the particular ip"
+        },
+        {
+            "id2":9,
+            "title2": "browser",
+            "type2": "varchar(50)",
+            "des2": "Here we are tracking the particular browser the user is using"
+        },
+        {
+            "id2":10,
+            "title2": "insert_time",
+            "type2": "enum('active','inactive)",
+            "des2": ""
+        }
+
+    ],
+    "summary":"This table is used to define the metadata of a user."
+            },
+
+            {
+                            
+    "id1":18,
+    "title1":"Cohort_stat TABLE",
+    "des1":"This table is used to store the count of views of cohorts  -",
+    "tables":[
+        {
+            "id2":1,
+            "title2": "id (primary key, ai)",
+            "type2": "int(10)",
+            "des2": "This the primary key of of the table"
+        },
+        {
+            "id2":2,
+            "title2": "id_cohort ",
+            "type2": "int(10)",
+            "des2": "This the cohorts id which we getting the donor_cohorts"
+        },
+        {
+            "id2":3,
+            "title2": "view_count",
+            "type2": "int(10)",
+            "des2": "Count of per cohorts views"
+        }
+    ],
+    "summary":"This table is only used to store the count of views that we can show the cohorts by views."
+            }
+        ]
+
+    }]
+}
+
+
+        

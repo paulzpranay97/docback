@@ -1,0 +1,734 @@
+{
+  "templates": [
+    {
+      "id": 1,
+      "title": "Users Guide",
+      "overview": "Welcome to LucinaEgg Bank's online platform at https://lucinaeggbank.com/  . LucinaEgg Bank is dedicated to providing a comprehensive and compassionate solution for individuals and couples seeking egg donation services. Our website serves as a gateway to a world of possibilities, offering a wealth of information, resources, and support to guide you through your egg donor journey.\nAt LucinaEgg Bank, we understand that each journey is unique. Our platform is designed to empower intended parents with the knowledge and tools they need to make informed decisions. Whether you're seeking to start or expand your family, our user-friendly interface offers easy access to essential information, services, and features tailored to your needs.\nWhether you're at the beginning of your journey or seeking specific insights, LucinaEgg Bank's website offers a user-friendly experience that guides you toward the possibilities that lie ahead. We invite you to explore our platform, engage with our resources, and take the next steps toward building the family you've always dreamed of.\nLucinaEgg Bank - Your Path to Parenthood Starts Here.",
+      "vedio": [
+        "#"
+      ],
+      "image1": [
+        "#"
+      ],
+      "keyhighlight":[
+        "Explore Donor Profiles:\n Discover a diverse range of egg donor profiles, each carefully selected to meet our stringent criteria. Our platform allows you to explore and compare donor options, making the selection process smoother and more personalized.",
+        "Innovative Features:\n Experience the convenience of features like AI Face Match, enabling you to find potential matches based on facial attributes. Our cutting-edge technology enhances your journey by providing more insights and possibilities.",
+        "Support and Guidance:\n Our commitment to your journey extends beyond profiles. Access our support team for personalized assistance, and utilize comprehensive resources to address your queries and concerns.",
+        "Secure and Accessible:\n Your privacy and security are paramount. Our platform ensures that your data is protected while providing you with easy access to the information you need."
+
+      ],
+
+
+
+
+
+      "chapters": [
+
+
+
+        {
+          "no1": 1,
+          "title1": "1.0 Getting Started",
+          "overview1": "The \"Getting Started\" section is your stepping stone to embark on your egg donor journey seamlessly. This comprehensive guide will walk you through the initial steps to ensure you're well-prepared to begin this meaningful experience.",
+          "link": [
+            "https://lucinaeggbank.com/"
+           
+          ],
+          "image1": [
+            "#"
+          ],
+          "action1": [
+            "Visit donors.lucinaeggank.com.",
+            "Start With sign up first",
+            "Create your account with your email, WeChat or lineID for getting started"
+          ],
+          "sections": [
+            {
+              "no2": 1,
+              "title2": "1.1 Account Creation/Sign Up",
+              "overview2": "Account creation is a quick and straightforward process. Here's how you can start your journey by signing up:",
+              "action2": [
+                "Visit donors.lucinaeggank.com.",
+                "Complete the necessary registration details, providing accurate information.",
+                "Click the \"Sign Up\" button to initiate the registration process.",
+                "Navigate through the search results to find donors that resonate with your aspirations.",
+                "Keep an eye on your email inbox, including SPAM/Junk folders, for a verification email.",
+                "Locate the verification email and click the provided link to activate your account."
+              ],
+              "sub_section": [
+               
+              ]
+            },
+            {
+                "no2": 2,
+                "title2": "1.2 Sign In",
+                "overview2": "Once you've successfully activated your registered email, signing in is a breeze. Here's how to access your account:",
+                "action2": [
+                  "Go to donors.lucinaeggank.com.",
+                  "Enter your registered username and a valid password.",
+                  "Click the \"Sign In\" button to securely log in to your account dashboard.",
+                  "Navigate through the search results to find donors that resonate with your aspirations."
+                ],
+                "sub_section": [
+                 
+                ]
+            },
+            {
+                "no2": 3,
+                "title2": "1.3 Sign In with WeChat / LineID",
+                "overview2": "Lucina Egg Bank offers the convenience of signing in using WeChat or LineID. Here's how to do it:",
+                "action2": [
+                  "Go to donors.lucinaeggank.com.",
+                  
+                  "Click the \"Sign In with WeChat\" button to securely log in to your account dashboard."
+                  
+                ],
+                "sub_section": [
+                  {
+                    "no3": 1,
+                    "title3": "1.3.1 WeChat Login",
+                    "overview3": "Lucina Egg Bank offers the convenience of signing in using WeChat . Here's how to do it:",
+                    "action3": [
+                      "Visit donors.lucinaeggank.com.",
+                      "Select the \"Sign In with WeChat\" option.",
+                      "Scan the provided QR code using your WeChat app.",
+                      "Follow the prompts on WeChat to grant access."
+                    ]
+                  },
+                  {
+                    "no3": 2,
+                    "title3": "1.3.2 LineID Login",
+                    "overview3": "Lucina Egg Bank offers the convenience of signing in using LineID . Here's how to do it:",
+                    "action3": [
+                      "Navigate to donors.lucinaeggank.com.",
+                      "Choose the \"Sign In with LineID\" feature.",
+                      "Scan the QR code using your LineID app.",
+                      "Follow the on-screen instructions on LineID to authorize access.",
+                      "Upon successful verification, you'll be directed to your account dashboard."
+                    ]
+                  }
+                ]
+            },
+            {
+                "no2": 4,
+                "title2": "1.4 Getting Assistance through Chat",
+                "overview2": "If you ever need assistance or have questions, our support team is here to help. You can easily connect with us through chat.",
+                "action2": [
+                  "Click on the \"Need Help?\" option.",
+                  "Reach out to us with any queries or concerns."
+                ],
+                "sub_section": [
+                  
+                ]
+            }
+          ]
+        },
+
+
+
+
+
+        {
+            "no1": 2,
+            "title1": "2.0 Dashboard",
+            "overview1": "Your Dashboard is your go-to place for managing your egg donor journey with ease. As soon as you log in, you'll have a wealth of valuable information at your fingertips, guiding you toward your path to parenthood. Let's delve into what this section has in store for you:",
+            "link": [
+              "https://lucinaeggbank.com/"
+             
+            ],
+            "image1": [
+              "#"
+            ],
+            "action1": [
+               "To access your Dashboard, log in to your account.",
+                "Navigate through the different sections using the provided links.",
+                "Explore popular and recently added donor cohorts to find a match that resonates with you.",
+                "Keep an eye on the Saved Cohorts Count to manage your selections.",
+                "Embrace the Lucina Refleggction AI feature to visualize potential resemblances."
+            ],
+        
+        
+        
+        
+        
+            "sections": [
+              {
+                "no2": 1,
+                "title2": "2.1 Popular Cohorts",
+                "overview2": "The \"Popular Cohorts\" section introduces you to donor cohorts that are currently capturing the interest of parents like you. This insight offers a window into the cohorts that are particularly sought after, enhancing your opportunity to discover the perfect match for your family.",
+                "action2": [
+                  "Login to your account.",
+                  "Go to Dashboard section.",
+                  "Find the Popular Cohorts widget.",
+                  "For a closer look at a specific cohort, simply click on its images. This action will effortlessly transport you to a comprehensive profile page, granting you access to in-depth information about the donor."
+                ],
+                "sub_section": [
+                    {
+                        "no3": 1,
+                        "title3": "2.1.1  Donor Profile",
+                        "overview3": "Follow the Step Form 3.3",
+                        "action3": [
+                          
+                        ]
+                      }
+                 
+                ]
+              },
+        
+              {
+                  "no2": 2,
+                  "title2": "2.2 Recently Added Cohorts",
+                  "overview2": "The \"Recently Added Cohorts\" segment ensures you remain abreast of the latest additions to our expansive donor cohort collection. This feature presents you with the opportunity to explore fresh and enticing options, broadening your array of choices as you embark on this meaningful journey.",
+                  "action2": [
+                    "Login to your account.",
+                    "Go to Dashboard section.",
+                    "To catch a glimpse of the newest choices, effortlessly navigate to the \"Recently Added Cohorts\" section.",
+                    "To glean deeper insights into a specific donor cohort, click on its profile. This action will seamlessly lead you to a comprehensive profile page, immersing you in the donor's characteristics and particulars."
+                  ],
+                  "sub_section": [
+                    {
+                        "no3": 1,
+                        "title3": "2.2.1 Donor Profile",
+                        "overview3": "Follow the Step Form 3.3",
+                        "action3": [
+                         
+                        ]
+                      }
+                   
+                  ]
+              },
+              {
+                  "no2": 3,
+                  "title2": "2.3 Saved Cohorts Count",
+                  "overview2": "Lucina Egg Bank offers the convenience of signing in using WeChat or LineID. Here's how to do it:",
+                  "action2": [
+                    "Login to your account.",
+                    
+                    "Go to Dashboard section.",
+                    "To gain a comprehensive view of your saved donor cohorts, effortlessly navigate to the \"Saved Cohorts Count\" section.",
+                    "By clicking on the count, you'll access your dedicated list of saved cohorts. This list empowers you to seamlessly review, adjust, or remove donors according to your preferences."
+                    
+                  ],
+                  "sub_section": [
+                    {
+                      "no3": 1,
+                      "title3": "2.3.1 Favorite list ",
+                      "overview3": "Follow the Step Form 3.3.2",
+                      "action3": [
+                        
+                      ]
+                    }
+                  ]
+              },
+              {
+                  "no2": 4,
+                  "title2": "2.4 Lucina Refleggtion AI",
+                  "overview2": "The \"Lucina Refleggction AI\" feature presents an exciting leap, offering AI-powered face matching to predict potential resemblances between you and your future child. This tool adds a new dimension to your journey, supporting you in making decisions with enhanced insights.",
+                  "action2": [
+                    "Login to your account.",
+                    "Go to Dashboard section.",
+                    "To embrace the power of AI face matching, navigate to the \"Lucina Refleggction AI\" section on your Dashboard.",
+                    "Upload photos of yourself and your partner. These images will serve as the foundation for AI predictions.",
+                    "Engage with AI-generated predictions that suggest potential resemblances between you and your future child. This knowledge empowers you to make well-informed decisions as you progress on your journey"
+                  ],
+                  "sub_section": [
+                    
+                    
+                  ]
+              },
+              {
+                "no2": 5,
+                "title2": "2.5 Browse All Profiles",
+                "overview2": "The \"Browse All Profiles\" feature beckons you to immerse yourself in the comprehensive gallery of donor profiles. This gateway invites you to explore a diverse spectrum of options, facilitating the discovery of the ideal match that aligns with your aspirations.",
+                "action2": [
+                  "Login to your account.",
+                  "Go to Dashboard section.",
+                  "To embrace the power of AI face matching, navigate to the \"Lucina Refleggction AI\" section on your Dashboard.",
+                  "Upload photos of yourself and your partner. These images will serve as the foundation for AI predictions.",
+                  "Engage with AI-generated predictions that suggest potential resemblances between you and your future child. This knowledge empowers you to make well-informed decisions as you progress on your journey"
+                ],
+                "sub_section": [
+                    {
+                        "no3": 1,
+                        "title3": "2.5.1 Gallery Page",
+                        "overview3": "Follow the Step Form 3.0",
+                        "action3": [
+                          "Login to your account.",
+                          "Go to Dashboard section.",
+                          "Begin your exploration by clicking on the \"Browse All Profiles\" section. This action effortlessly transports you to our Gallery page, where you can delve into a wide array of donor possibilities."
+                        ]
+                      }
+                  
+                ]
+            }
+            ]
+          },
+
+
+
+
+        
+          {
+            "no1": 3,
+            "title1": "3.0 Gallery Page",
+            "overview1": "Welcome to the Lucina Donor Gallery, your portal to exploring donor profiles. Here, intended parents can seamlessly browse through a comprehensive list of donors and apply tailored filters to uncover their ideal match. Let's delve into the features that make this page a treasure trove of possibilities",
+            "link": [
+         
+             
+            ],
+            "image1": [
+        
+            ],
+            "action1": [
+               "To access the Gallery Page, log in to your account and navigate to the “Find a Donor” section.",
+                "Explore the \"Find a Donors\" area by clicking on it, allowing you to begin your journey of discovering potential donors.",
+                "Customize your exploration by using the available filters such as cohort alias, race, cohort status, height, eye color, hair color, blood type, and education.",
+                "Delve into donor profiles by clicking on them to access detailed information and images.",
+                "For an in-depth understanding, request full profile access, enabling you to gain comprehensive insights into a donor's background.",
+                "Utilize the \"Add to Favorites\" and \"Compare\" features to conveniently save and assess donors that capture your attention.",
+                "Make use of the \"Compare Section\" to view multiple donor profiles side by side, simplifying your decision-making process."
+            ],
+            "sections": [
+              {
+                "no2": 1,
+                "title2": "3.1 Find a Donors",
+                "overview2": "The \"Find a Donors\" section serves as your gateway to an extensive array of donor profiles. This is where intended parents can effortlessly access all available donors, customize their search with filters, and refine their options according to their preferences.",
+                "action2": [
+                  "Login into your account .",
+                  "Clicking on the \"Find a Donors\" section.",
+                  "Utilize the available filters, including cohort alias, race, cohort status, height, eye color, hair color, blood type, and education, to customize your exploration.",
+                  "Navigate through the search results to find donors that resonate with your aspirations."
+                ],
+                "sub_section": [
+                    
+                ]
+              },
+        
+              {
+                  "no2": 2,
+                  "title2": "3.2 Select your donor criteria",
+                  "overview2": "Fine-tune your search using an array of filters such as cohort alias, race, cohort status, height, eye color, hair color, blood type, and education. This empowers you with a personalized and customized browsing experience.",
+                  "action2": [
+                    "login to your account ",
+                    "Click on “Find a Donor” Section",
+                    "Check the \"Select your donor criteria\" section to access the available filters.",
+                    "Choose from filters such as cohort alias, race, cohort status, height, eye color, hair color, blood type, and education.",
+                    "Adjust the filters to align with your desired donor characteristics.",
+                    "Witness the search results update in real-time based on your selected filters."
+                  ],
+                  "sub_section": [
+                    
+                  ]
+              },
+              {
+                  "no2": 3,
+                  "title2": "3.3 Donor Profiles",
+                  "overview2": "Selecting a specific donor's profile from the search results leads you to the individual donor's dedicated gallery page. This is where you gain access to a wealth of comprehensive and detailed information about the donor, helping you make informed decisions.",
+                  "action2": [
+                    "login to your account.",
+                    "Click on “Find a Donor” Section",
+                    "Click on a donor's profile to access their dedicated profile page.",
+                    "Click on the \"Request Full Profile Access\" option to express your interest in delving deeper.",
+                    "Await confirmation and access to a more comprehensive view of the donor's profile."
+                    
+                  ],
+                  "sub_section": [
+                    {
+                      "no3": 1,
+                      "title3": "3.3.1 Request Full Profile Access",
+                      "overview3": "On the donor's gallery page, you're presented with the option to request full profile access. By opting for this feature, you open the door to exploring an extensive range of details about the donor's life, personality, and experiences.",
+                      "action3": [
+                        "login to your account .",
+                        "Click on “Find a Donor” Section",
+                        "Click on a donor's profile to access their dedicated profile page.",
+                        "Review the donor's public details, including images and basic information.",
+                        "Request full profile access for deeper insights into the donor's background and attributes."
+                      ]
+                    },
+                    {
+                        "no3": 2,
+                        "title3": "3.3.2 Add to Favorites",
+                        "overview3": "Within the donor's gallery page, you have the ability to add the donor to your favorites list or compare them with other donors. These features enhance your experience by providing convenient ways to organize and assess donors that capture your attention.",
+                        "action3": [
+                            "login to your account." ,
+                            "Click on “Find a Donor” Section",
+                            "Click on a donor's profile to access their dedicated profile page.",
+                            "To add the donor to your favorites list, click on the \"Add to Favorites\" option on their donors profile page.",
+                            "Utilize the \"Compare\" feature to assess the selected donor alongside other potential matches."
+                        ]
+                      },
+                      {
+                        "no3": 3,
+                        "title3": "3.3.3 Add to Compare Section",
+                        "overview3": "The compare section elevates your decision-making process by enabling you to view multiple donor profiles side by side. This feature simplifies the evaluation of different donors, aiding you in making well-informed choices.",
+                        "action3": [
+                            "login to your account" ,
+                           " Click on “Find a Donor” Section",
+                            "Click on a donor's profile to access their dedicated profile page.",
+                            "Select the \"Add to Compare\" option on the donor's profile page.",
+                            "Choose other donors you wish to compare.",
+                            "Access the \"Compare\" section to view the selected donor profiles together, facilitating a comprehensive assessment."
+                        ]
+                      },
+                      {
+                        "no3": 4,
+                        "title3": "3.3.4 Image View Section",
+                        "overview3": "While exploring a donor's gallery page, you can click on the donor's images to view them in larger detail. This offers you a closer look at the donor's appearance and characteristics, aiding in your assessment process.",
+                        "action3": [
+                            "login to your account" ,
+                            "Click on “Find a Donor” Section",
+                            "Click on a donor's profile to access their dedicated profile page.",
+                            "On the donor's gallery page, click on an image to open a larger view.",
+                            "Examine the image closely to gain more insights into the donor's physical attributes."
+                        ]
+                      }
+                  ]
+              }
+            ]
+          },
+
+
+
+
+
+
+
+          {
+            "no1": 4,
+            "title1": "4.0 Compare Section",
+            "overview1": "The Compare Section is a vital tool that empowers intended parents to make informed decisions during your egg donor journey. This feature allows you to perform side-by-side comparisons of prospective donors based on their basic public details. It's a valuable asset to help you identify the most suitable match for your family with ease and confidence.",
+            "link": [
+         
+             
+            ],
+            "image1": [
+        
+            ],
+            "action1": [
+                "Log in to your account.",
+                "Navigate to the \"Browse All Profiles\" or “Gallery” section to explore donor profiles.",
+                "Go to the donor profile details page ",
+                "Click on \"Add to Compare\" button to compare the donor profile with other profiles (***Note: Refer the step 3.3.3 for add to compare***)",
+                "Follow the same process to add more donor profiles for comparing ",
+                "Only 5 donor profiles can be compared at a time ",
+                "Access the “Compare Donors” feature from your left side bar.",
+                "Review the list of donors you've added for comparison.",
+                "Examine their basic public details presented in a tabular format, with each donor's information displayed in a separate column.",
+                "Analyze the data to identify the most compatible donor based on your specific criteria and preferences."
+            ],
+        
+        
+            "sections": [
+        
+        
+              {
+                "no2": 1,
+                "title2": "4.1 Adding Donors to the Comparison",
+                "overview2": "Before you can begin comparing donors, you need to add them to your comparison list. Here's how you can do it",
+                "action2": [
+                    "Log in to your account.",
+                    "Navigate to the \"Browse All Profiles\" or “Gallery” section to explore donor profiles.",
+                   "Select the donors you wish to compare by clicking the \"Add to Compare\" button on their respective profiles."
+                ],
+                "sub_section": [
+                    
+                ]
+              },
+        
+              {
+                  "no2": 2,
+                  "title2": "4.2 Side-by-Side Comparison",
+                  "overview2": "In the Compare Section, you can view the selected donors' basic public details side by side. This allows you to quickly identify similarities and differences across various aspects, including Education, Ethnicity, Age, Natural Hair Color, Eye Color, Blood Type, Height, Number of Eggs, Cohort Status, Price",
+                  "action2": [
+                  " Log in to your account.",
+                "Access the “Compare Donors” Section from your Dashboard.",
+                "Review the list of donors you've added for comparison.",
+                 "Examine their basic public details presented in a tabular format, with each donor's information displayed in a separate column.",
+                "Analyze the data to identify the most compatible donor for your specific criteria and preferences."
+                  ],
+                  "sub_section": [
+                    
+                  ]
+              },
+    
+              {
+                  "no2": 3,
+                  "title2": "4.3 Remove from Compare",
+                  "overview2": "Remove a donor from the comparison table to streamline your selection process. Log in, access \"Compare Donors,\" locate the donor, click \"Remove,\" and confirm. The donor will be promptly removed, helping refine your list of potential matches.",
+                  "action2": [
+                    "Log in to your account.",
+                    "Access the “Compare Donors” Section from your Dashboard.",
+                    "In the donor comparison table, locate the donor you want to remove.",
+                    "Next to the donor's name or profile, click the \"Remove\" button or icon.",
+                    "Confirm the removal when prompted.",
+                    "The selected donor will be removed from the comparison table."
+                    
+                  ],
+                  "sub_section": [
+        
+                  ]
+              },
+        
+              {
+                "no2": 4,
+                "title2": "4.4 Add to Favorite from Compare",
+                "overview2": "Add a donor to your favorites list from the comparison table to keep track of potential matches. Log in, access \"Compare Donors,\" select the desired donor, click \"Add to Favorites,\" and the donor will be included in your favorites list for future reference.(Note: After add to favorite the profile refer to step 4.3.2)",
+                "action2": [
+                    "Log in to your account.",
+                    "Access the “Compare Donors” Section from your Dashboard.",
+                    "In the donor comparison table, locate the donor you want to add to your favorites.",
+                    "Next to the donor's name or profile, click the \"Add to Favorites\" button or icon.",
+                    "The selected donor will be added to your favorites list for future reference."
+                  
+                ],
+                "sub_section": [
+        
+                ]
+            },
+        
+        
+            {
+                "no2": 5,
+                "title2": "4.5 View from Compare",
+                "overview2": "View a donor's detailed profile from the comparison table to gain deeper insights into their background and characteristics. Log in, access \"Compare Donors,\" identify the donor, click \"View Profile,\" and seamlessly access their comprehensive profile page.(Note: After viewing the profile refer to step 4.3)",
+                "action2": [
+                    "Log in to your account.",
+                    "Access the “Compare Donors” Section from your Dashboard.",
+                    "In the donor comparison table, locate the donor whose profile you want to view.",
+                    "Next to the donor's name or profile, click the \"View Profile\" button or icon.",
+                    "You will be redirected to the detailed profile page of the selected donor."
+                  
+                ],
+                "sub_section": [
+        
+                ]
+            }
+        
+        
+        
+            ]
+          },
+
+
+
+          
+          {
+            "no1": 5,
+            "title1": "5.0 Contact Us",
+            "overview1": "TThe \"Contact Us\" section provides you with a straightforward way to get in touch with us, whether you have questions, inquiries, or need assistance with your egg donor journey. We are here to support you throughout your path to parenthood, and your feedback and questions are important to us.",
+            "link": [
+         
+             
+            ],
+            "image1": [
+        
+            ],
+            "action1": [
+                "To access the Contact Us section, navigate to the \"Contact Us\" link on our platform.",
+                "Fill out the query form with your questions and select your preferred contact time and method.",
+                "Review your details and click \"Send\" to submit your query to us.",
+                "Expect a timely response from our dedicated team, ready to assist you every step of the way."
+            ],
+        
+        
+            "sections": [
+        
+              {
+                "no2": 1,
+                "title2": "5.1 Sending Your Query",
+                "overview2": "Before sending your query, it's important to provide us with the necessary details so we can assist you effectively. Here's how you can do it:",
+                "action2": [
+                   "Log in  to your account.",
+                   "Navigate the “Contact Us”.",
+                    "Fill out the query form by entering your questions, inquiries, or concerns in the provided text field.",
+                    "Choose your preferred time of contact from the available options: Morning, Afternoon, or Evening.",
+                    "Select your preferred contact method from the following options: Call, Text, Email, or WeChat.",
+                    "Review your query to ensure all details are accurate and complete.",
+                    "Click the \"Send\" button to submit your query to us."
+                ],
+                "sub_section": [
+                    
+                ]
+              },
+        
+              {
+                  "no2": 2,
+                  "title2": "5.2  Our Response",
+                  "overview2": "After receiving your query, our team will respond promptly using your preferred contact method and during your selected contact time. We are committed to addressing your questions and providing the support you need as you embark on your journey to parenthood.",
+                  "action2": [
+                 
+                  ],
+                  "sub_section": [
+                    
+                  ]
+              }
+        
+            ]
+          },
+          {
+            "no1": 6,
+            "title1": "6.0 Lucina ReflEggction AI",
+            "overview1": "The \"Lucina ReflEggtion AI\" is an advanced tool designed to help intended parents find egg donor profiles that match their facial features. By uploading your photo, this AI-powered feature will provide you with a selection of donor profiles with potential facial resemblances.",
+            "link": [
+         
+             
+            ],
+            "image1": [
+        
+            ],
+            "action1": [
+                "Log in to your account.",
+                "Access the Lucina ReflEggction AI section from your sidebar.",
+                "Upload your photo. This image will serve as the basis for AI matching.",
+                "Initiate the AI face matching process by clicking the \"Find Matching Donors\" button.",
+                "Allow the AI system to analyze your image and generate a selection of donor profiles with potential facial resemblances."
+            ],
+        
+        
+            "sections": [
+        
+        
+            ]
+          },
+
+
+
+          {
+            "no1": 7,
+            "title1": "7.0 Chat With Us",
+            "overview1": "Our \"Chat With Us\" feature is designed to provide you with immediate access to our support team. If you have questions, need assistance, or simply want to chat with us, clicking on this option will redirect you to our chat application.",
+            "link": [
+         
+             
+            ],
+            "image1": [
+        
+            ],
+            "action1": [
+                "Click on the \"Chat With Us\" option.",
+                "You will be redirected to our chat application, where you can instantly connect with our support team.",
+               " Feel free to ask any questions or seek guidance during your egg donor journey. We're here to assist you every step of the way."
+            ],
+        
+        
+            "sections": [
+        
+        
+            ]
+          },
+
+
+
+
+
+
+
+          {
+            "no1": 8,
+            "title1": "8.0 Profile",
+            "overview1": "The \"Profile\" section is your gateway to managing your personal account and preferences. Here, you can access and update your profile information, manage your favorites, enhance your security, and log out of your account.",
+            "link": [
+         
+             
+            ],
+            "image1": [
+        
+            ],
+            "action1": [
+                "Click on \"Profile\" to access your account settings.",
+                "Explore the various options within this section to manage your account effectively."
+            ],
+        
+        
+            "sections": [
+                {
+                    "no2": 1,
+                    "title2": "8.1 My Profile",
+                    "overview2": "\"My Profile\" allows you to view and edit your personal information, ensuring that your account details are up-to-date and accurate.",
+                    "action2": [
+                        "Log in to your account.",
+                        "Access the \"Profile\" section.",
+                       " Click on the profile section for the pop up menu.",
+                        "Click on “Profile” to go to profile page general settings."
+                         
+                    ],
+                    "sub_section": [
+                        {
+                            "no3": 1,
+                            "title3": "8.1.1 General",
+                            "overview3": "In this section, you can update basic details such as your profile picture, name, contact number, country, and state. Keeping this information current helps us serve you better.",
+                            "action3": [
+                                "Log in to your account." ,
+                                "Access the \"Profile\" section.",
+                               " Click on the profile section for the pop up menu.",
+                                 "Click on “Profile” to go to profile page general settings.",
+                                " Update the required field information (like image, name, email, contact no. etc).",
+                                 "Click on the “Save Changes” button to save the updated data"
+                            ]
+                          },
+                          {
+                            "no3": 2,
+                            "title3": "8.1.2 Security",
+                            "overview3": "Your account's security is of utmost importance. Here, you can manage security options, including changing your password, updating security questions, and ensuring the safety of your account.",
+                            "action3": [
+                                "Log in to your account.",
+                                "Access the \"Profile\" section.",
+                                "Click on \"Profile\" for the pop-up menu.",
+                                "Select \"Profile\" for general settings.",
+                                "Navigate to \"Security\".",
+                                "Update security questions, change password, or modify email.",
+                               " Save changes by clicking \"Save\", \"Update\", or \"Change\"."
+                            ]
+                          }
+                    ]
+                  },
+            
+                  {
+                      "no2": 2,
+                      "title2": "8.2 Favorites",
+                      "overview2": "The \"Favorites\" section is where you can view and manage the donors you've added to your favorites list. This makes it easy to keep track of profiles you're interested in.(Follow the Step Form 3.3.2)",
+                      "action2": [
+                     
+                      ],
+                      "sub_section": [
+                        
+                      ]
+                  },
+        
+                  {
+                    "no2": 3,
+                    "title2": "8.3  Security",
+                    "overview2": "Your account's security is of utmost importance. Here, you can manage security options, including changing your password, updating security questions, and ensuring the safety of your account.(Follow the steps 8.1.2)",
+                    "action2": [
+                   
+                    ],
+                    "sub_section": [
+                      
+                    ]
+                },
+        
+                {
+                    "no2": 4,
+                    "title2": "8.4 Log Out",
+                    "overview2": "\"Log Out\" provides a quick and secure way to sign out of your account when you're done using our platform.Using the Profile section, you have full control over your account, allowing you to personalize your experience and ensure the security of your data.",
+                    "action2": [
+                        "Log in to your account.",
+                        "Access the \"Profile\" section.",
+                        "Click on \"Profile\" for the pop-up menu.",
+                        "Choose \"Logout\" to exit securely."
+                    ],
+                    "sub_section": [
+                      
+                    ]
+                }
+        
+            ]
+          }
+
+
+
+        
+      ]
+    }
+  ]
+}
