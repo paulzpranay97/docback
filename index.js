@@ -226,7 +226,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const UserGuideRouter = require('./routes/user_doc');
-const DatabaseRouter = require('./routes/database_doc')
+// const DatabaseRouter = require('./routes/database_doc')
 const cors = require('cors')
 
 app.use(cors())
@@ -234,7 +234,7 @@ app.use(bodyParser.json());
 
 // Use the imported routers
 app.use('/api', UserGuideRouter);
-app.use('/api-database', DatabaseRouter)
+// app.use('/api-database', DatabaseRouter)
 
 
 // Start the server

@@ -215,5 +215,36 @@ UserGuideRouter.patch('/update', (req, res) => {
     res.json(newData.templates);
   });
   
-
+  UserGuideRouter.get('/search', (req, res) => {
+    const { query } = req.query; // Get the search query from the query parameters
+    const data = readData();
+  
+    // Helper function to check if a string contains the query
+    const stringContainsQuery = (str, query) => str.toLowerCase().includes(query.toLowerCase());
+  
+    // Filter data to find templates, chapters, sections, or sub-sections with matching titles
+    const matchingData = {
+      templates: data.templates.filter(template =>
+        stringContainsQuery(template.title, query)
+      ),
+      chapters: data.templates[0].chapters.filter(chapter =>
+        stringContainsQuery(chapter.title1, query)
+      ),
+      sections: data.templates[0].chapters.flatMap(chapter =>
+        chapter.sections.filter(section =>
+          stringContainsQuery(section.title2, query)
+        )
+      ),
+      subSections: data.templates[0].chapters.flatMap(chapter =>
+        chapter.sections.flatMap(section =>
+          section.sub_section.filter(subSection =>
+            stringContainsQuery(subSection.title3, query)
+          )
+        )
+      ),
+    };
+  
+    res.json(matchingData);
+  });
+  
 module.exports = UserGuideRouter;
