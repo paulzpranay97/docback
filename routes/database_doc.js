@@ -28,4 +28,23 @@ DatabaseRouter.get('/templates', (req, res) => {
     res.json(data.templates);
   });
 
+
+
+  DatabaseRouter.get('/search', (req, res) => {
+    const { query } = req.query; // Get the search query from the query parameters
+    const data = readData();
+  
+    // Helper function to check if a string contains the query
+    const stringContainsQuery = (str, query) => str.toLowerCase().includes(query.toLowerCase());
+  
+    // Filter chapters to find those with matching titles
+    const matchingChapters = data.templates[0].chapters.filter(chapter =>
+      stringContainsQuery(chapter.title1, query)
+    );
+  
+    res.json({ chapters: matchingChapters });
+  });
+  
+
+
   module.exports = DatabaseRouter;
